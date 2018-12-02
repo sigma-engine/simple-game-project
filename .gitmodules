@@ -1,0 +1,12 @@
+[submodule "sigma-core"]
+	path = sigma-core
+	url = git@github.com:sigma-engine/sigma-core.git
+[submodule "sigma-bake"]
+	path = sigma-bake
+	url = git@github.com:sigma-engine/sigma-bake.git
+[submodule "sigma-opengl"]
+	path = sigma-opengl
+	url = git@github.com:sigma-engine/sigma-opengl.git
+[submodule "simple-game"]
+	path = simple-game
+	url = git@github.com:sigma-engine/simple-game.git
