@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.10)
 cmake_policy(SET CMP0074 NEW)
 
 include(cmake/HunterGate.cmake)
@@ -56,7 +56,6 @@ add_subdirectory(sigma-core)
 add_subdirectory(sigma-opengl)
 add_subdirectory(simple-game)
 
-bake_resources()
 #(sigma-core sigma-opengl simple-game)
 #set(DO_CLANG_TIDY "clang-tidy" "-checks=*,-clang-analyzer-alpha.*,-google-*,-llvm-*,-fuchsia-*")
 #set_target_properties(sigma-core PROPERTIES CXX_CLANG_TIDY "${DO_CLANG_TIDY}")
