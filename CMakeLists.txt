@@ -51,6 +51,7 @@ find_package(SDL2 CONFIG REQUIRED)
 find_package(stb CONFIG REQUIRED)
 find_package(Threads REQUIRED)
 
+add_subdirectory(sigma-bake)
 add_subdirectory(sigma-core)
 add_subdirectory(sigma-opengl)
 add_subdirectory(simple-game)
