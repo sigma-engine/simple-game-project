@@ -12,3 +12,10 @@ hunter_config(
     SHA1 c56130f893394972bac649a50eaa98c1f744886e
     CMAKE_ARGS GLAD_INSTALL=ON
 )
+
+hunter_config(
+    Assimp
+    URL https://github.com/assimp/assimp/archive/v4.1.0.tar.gz
+    SHA1 ce3589f9455c743e993fd802bdaaed72838cd3f4
+    CMAKE_ARGS ASSIMP_BUILD_ASSIMP_TOOLS=OFF ASSIMP_BUILD_TESTS=OFF
+)
