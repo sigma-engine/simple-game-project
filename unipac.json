@@ -1,0 +1,72 @@
+{
+	"providers": {
+		"git": [
+			"https://github.com/"
+		],
+		"hg":[
+			"http://hg.libsdl.org/"
+		]
+	},
+	"dependencies" : [
+		{
+			"name": "git:g-truc/glm",
+			"os": ["Windows", "Darwin", "Linux"],
+			"type": ["Debug", "RelWithDebInfo"],
+			"build_system": "cmake",
+			"cmake_args": [
+				"-DGLM_TEST_ENABLE=OFF"
+			]
+		},
+		{
+			"name": "git:sigma-engine/assimp",
+			"os": ["Windows", "Darwin", "Linux"],
+			"type": ["Debug", "RelWithDebInfo"],
+			"build_system": "cmake",
+			"cmake_args": [
+				"-DASSIMP_BUILD_ASSIMP_TOOLS=OFF",
+				"-DASSIMP_BUILD_TESTS=OFF"
+			]
+		},
+		{
+			"name": "git:sigma-engine/cereal",
+			"os": ["Windows", "Darwin", "Linux"],
+			"type": ["Debug", "RelWithDebInfo"],
+			"build_system": "cmake",
+			"cmake_args": [
+				"-DJUST_INSTALL_CEREAL=ON"
+			]
+		},
+		{
+			"name": "git:sigma-engine/glad",
+			"os": ["Windows", "Darwin", "Linux"],
+			"type": ["Debug", "RelWithDebInfo"],
+			"build_system": "cmake",
+			"cmake_args": [
+				"-DGLAD_INSTALL=ON"
+			]
+		},
+		{
+			"name": "git:sigma-engine/stb",
+			"os": ["Windows", "Darwin", "Linux"],
+			"type": ["Debug", "RelWithDebInfo"],
+			"build_system": "cmake"
+		},
+		{
+			"name": "git:sigma-engine/json",
+			"os": ["Windows", "Darwin", "Linux"],
+			"type": ["Debug", "RelWithDebInfo"],
+			"build_system": "cmake",
+			"cmake_args": [
+				"-DJSON_BuildTests=OFF"
+			]
+		},
+		{
+			"name": "git:sigma-engine/debug-draw",
+			"os": ["Windows", "Darwin", "Linux"],
+			"type": ["Debug", "RelWithDebInfo"],
+			"build_system": "cmake",
+			"cmake_args": [
+			]
+		}
+	]
+}

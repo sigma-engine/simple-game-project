@@ -1,0 +1,4 @@
+{
+	"C_Cpp.default.configurationProvider": "vector-of-bool.cmake-tools",
+	"cmake.configureArgs": ["-DCMAKE_PREFIX_PATH=${workspaceFolder}/.unipac/install/lib64/cmake"]
+}
