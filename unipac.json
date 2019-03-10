@@ -9,6 +9,33 @@
 	},
 	"dependencies" : [
 		{
+			"name": "git:google/googletest",
+			"os": ["Windows", "Darwin", "Linux"],
+			"type": ["Debug", "RelWithDebInfo"],
+			"build_system": "cmake",
+			"cmake_args": [
+			]
+		},
+		{
+			"name": "git:sigma-engine/benchmark",
+			"os": ["Windows", "Darwin", "Linux"],
+			"type": ["Debug", "RelWithDebInfo"],
+			"build_system": "cmake",
+			"cmake_args": [
+				"-DBENCHMARK_ENABLE_TESTING=OFF",
+				"-DBENCHMARK_ENABLE_INSTALL=ON"
+			]
+		},
+		{
+			"name": "git:sigma-engine/json",
+			"os": ["Windows", "Darwin", "Linux"],
+			"type": ["Debug", "RelWithDebInfo"],
+			"build_system": "cmake",
+			"cmake_args": [
+				"-DJSON_BuildTests=OFF"
+			]
+		},
+		{
 			"name": "git:g-truc/glm",
 			"os": ["Windows", "Darwin", "Linux"],
 			"type": ["Debug", "RelWithDebInfo"],
@@ -18,14 +45,10 @@
 			]
 		},
 		{
-			"name": "git:sigma-engine/assimp",
+			"name": "git:sigma-engine/stb",
 			"os": ["Windows", "Darwin", "Linux"],
 			"type": ["Debug", "RelWithDebInfo"],
-			"build_system": "cmake",
-			"cmake_args": [
-				"-DASSIMP_BUILD_ASSIMP_TOOLS=OFF",
-				"-DASSIMP_BUILD_TESTS=OFF"
-			]
+			"build_system": "cmake"
 		},
 		{
 			"name": "git:sigma-engine/cereal",
@@ -46,22 +69,25 @@
 			]
 		},
 		{
-			"name": "git:sigma-engine/stb",
-			"os": ["Windows", "Darwin", "Linux"],
-			"type": ["Debug", "RelWithDebInfo"],
-			"build_system": "cmake"
-		},
-		{
-			"name": "git:sigma-engine/json",
+			"name": "git:sigma-engine/debug-draw",
 			"os": ["Windows", "Darwin", "Linux"],
 			"type": ["Debug", "RelWithDebInfo"],
 			"build_system": "cmake",
 			"cmake_args": [
-				"-DJSON_BuildTests=OFF"
 			]
 		},
 		{
-			"name": "git:sigma-engine/debug-draw",
+			"name": "git:sigma-engine/assimp",
+			"os": ["Windows", "Darwin", "Linux"],
+			"type": ["Debug", "RelWithDebInfo"],
+			"build_system": "cmake",
+			"cmake_args": [
+				"-DASSIMP_BUILD_ASSIMP_TOOLS=OFF",
+				"-DASSIMP_BUILD_TESTS=OFF"
+			]
+		},
+		{
+			"name": "git:skypjack/entt",
 			"os": ["Windows", "Darwin", "Linux"],
 			"type": ["Debug", "RelWithDebInfo"],
 			"build_system": "cmake",
